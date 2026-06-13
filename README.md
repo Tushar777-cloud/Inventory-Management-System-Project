@@ -55,7 +55,7 @@ Make sure you have one of the following installed:
 #### 2. Clone or Download the Project
 
 ```bash
-
+https://github.com/Tushar777-cloud/Inventory-Management-System-Project.git
 ```
 
 Or download the ZIP and extract it.
