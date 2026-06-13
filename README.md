@@ -82,118 +82,35 @@ C:\xampp\htdocs\inventory-management-system\
 1. Open your browser and go to:
 http://localhost/phpmyadmin
 
-2. Click **"New"** on the left sidebar to create a new database
+2. Click **"Import"** in the top navigaion
 
-3. Name it:
-inventory_db
-   and click **Create**
+3. Click choose file and browse to **"htdocs/inventory-management-system"**
 
-4. Click on the **`inventory_db`** database you just created
-
-5. Click the **SQL** tab at the top
-
-6. Paste the SQL queries from the file below and click **Go**:
-database/inventory_db.sql
+4. Select db.sql and click on import by scrolling down
 
 > This will create all the required tables automatically.
 
 ---
 
-#### 5. Configure Database Connection
 
-Open the file `config/db.php` (or `connection.php` — wherever your DB config is) and update:
-
-```php
-<?php
-$host = "localhost";
-$user = "root";        // default XAMPP username
-$password = "";        // default XAMPP password is empty
-$database = "inventory_db";
-
-$conn = mysqli_connect($host, $user, $password, $database);
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-?>
-```
-
-> If you set a custom MySQL password in XAMPP, update the `$password` field.
-
----
 
 #### 6. Run the Project
 
 Open your browser and go to:
-http://localhost/inventory-management-system/index.html
+http://localhost/inventory-management-system/
 
-Or if your entry point is a PHP file:
-http://localhost/inventory-management-system/index.php
+And the credintial on the database is:
+Username : Admin
+Password : Admin
 
 🎉 **You're all set!**
-
----
-
-## 📁 Project Structure
-inventory-management-system/
-
-├── index.php               # Main entry / dashboard
-
-├── login.php               # Login page
-
-├── logout.php              # Session destroy
-
-├── config/
-
-│   └── db.php              # Database connection file
-
-├── database/
-
-│   └── inventory_db.sql    # SQL file to set up tables
-
-├── css/
-
-│   └── style.css           # Stylesheet
-
-├── js/
-
-│   └── app.js              # Frontend JavaScript
-
-├── pages/
-
-│   ├── add_item.php
-
-│   ├── edit_item.php
-
-│   ├── delete_item.php
-
-│   ├── reports.php
-
-│   └── search.php
-
-└── README.md
-
-> _(Update this to match your actual file structure)_
-
----
-
-## 🗄️ Database Structure (Overview)
-
-The SQL file sets up the following tables:
-
-- **`users`** — stores login credentials
-- **`items`** — stores product/inventory data
-- **`categories`** — product categories
-- **`stock_log`** — tracks stock changes over time
-
-> Import `database/inventory_db.sql` into phpMyAdmin to create all tables automatically.
 
 ---
 
 ## 📖 Usage
 
 1. Go to `http://localhost/inventory-management-system/`
-2. **Log in** with your credentials
+2. **Log in** with your credentials (both are Admin,Admin)
 3. Use the **Dashboard** to view current stock overview
 4. Click **Add Item** to add new products to the database
 5. Use **Search & Filter** to find specific items
@@ -211,13 +128,7 @@ This project was developed as a **college project** to practice full-stack web d
 ## 🙋‍♂️ Author
 
 **Tushar**
-- GitHub: [@your-username](https://github.com/your-username)
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
+- GitHub: [Tushar777-cloud](https://github.com/Tushar777-cloud)
 
 ---
 
